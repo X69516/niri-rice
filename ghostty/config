@@ -1,0 +1,29 @@
+# --- Шрифты ---
+font-family = "JetBrainsMono Nerd Font"
+font-size = 11
+
+# --- Цвета (Ручная настройка Urple-стиля) ---
+# Мы не используем параметр theme, чтобы не было ошибок поиска файла
+background = #1a1b26
+foreground = #a29bfe
+cursor-color = #a29bfe
+
+palette = 0=#000000
+palette = 1=#ff5555
+palette = 2=#50fa7b
+palette = 3=#f1fa8c
+palette = 4=#bd93f9
+palette = 5=#ff79c6
+palette = 6=#8be9fd
+palette = 7=#bbbbbb
+
+# --- Окно и эффекты ---
+window-decoration = false
+window-padding-x = 12
+window-padding-y = 12
+background-opacity = 0.9
+background-blur-radius = 20
+
+# --- Курсор ---
+cursor-style = block
+cursor-style-blink = true

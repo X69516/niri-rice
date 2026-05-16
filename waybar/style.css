@@ -1,0 +1,100 @@
+/* Базовые стили для ВСЕХ модулей-таблеток */
+#battery,
+#language,
+#network,
+#cpu,
+#temperature,
+#memory,
+#custom-clock,
+#workspaces,
+#pulseaudio {
+  background-color: #27232b;
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  color: #d8cab8;
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+/* Глобальный шрифт для всей панели */
+* {
+  font-family: "Maple Mono", "Font Awesome 6 Free", sans-serif;
+  font-size: 13px;
+}
+
+/* Полностью прозрачная подложка всей панели БЕЗ !important */
+window#waybar {
+  background-color: rgba(0, 0, 0, 0);
+  background: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+/* Смещаем самый крайний правый модуль от края экрана */
+#pulseaudio {
+  margin-right: 12px;
+}
+
+/* ЛОГОТИП ARCH: КРУПНЫЙ И ЧИСТЫЙ */
+#custom-arch,
+#custom-arch label {
+  background-color: transparent;
+  background: none;
+  color: #ac82e9;
+  font-size: 24px;
+  margin: 6px 0px 6px 14px;
+  padding: 0px;
+  border-style: none;
+  box-shadow: none;
+}
+
+/* Подсветка логотипа при наведении */
+#custom-arch:hover,
+#custom-arch:hover label {
+  color: #bda2fa;
+  transition-duration: 120ms;
+}
+
+/* Эффект наведения на звук */
+#pulseaudio:hover {
+  background-color: #ac82e9;
+  color: #141216;
+  transition-duration: 120ms;
+}
+
+/* --- Стилизация воркспейсов Niri --- */
+#workspaces button {
+  padding: 0 6px;
+  color: #77727c;
+  font-weight: bold;
+  transition-duration: 100ms;
+}
+
+#workspaces button:hover {
+  color: #8f56e1;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  color: #ac82e9;
+  background-color: #352f3a;
+}
+
+#workspaces button.urgent {
+  color: #fcb167;
+}
+
+/* --- Состояния батареи --- */
+#battery {
+  color: #ffffff;
+}
+
+#battery.warning {
+  color: #fcb167;
+}
+
+#battery.critical {
+  color: #fa5c5c;
+}

@@ -1,0 +1,111 @@
+{
+  "layer": "top",
+  "position": "top",
+  "mod": "dock",
+  "exclusive": true,
+  "passthrough": false,
+  "gtk-layer-shell": true,
+  "height": 40,
+
+  "modules-left": [
+    "custom/arch",
+    "niri/workspaces"
+  ],
+  "modules-center": [
+    "custom/clock"
+  ],
+  "modules-right": [
+    "niri/language",
+    "network",
+    "cpu",
+    "temperature",
+    "memory",
+    "battery",
+    "pulseaudio"
+  ],
+
+  // Родной модуль CPU (показывает честные 4-8%)
+  "cpu": {
+    "interval": 2,
+    "format": "󰻠  {usage}%",
+    "tooltip": false
+  },
+
+  // Официальный модуль температуры для ThinkPad
+  "temperature": {
+    "thermal-zone": 0,
+    "interval": 2,
+    "format": "  {temperatureC}°C",
+    "tooltip": false
+  },
+
+  // Железобетонные часы через системную утилиту date
+  "custom/clock": {
+    "exec": "date '+󰸗  %d.%m.%Y      %H:%M'",
+    "interval": 60,
+    "format": "{}"
+  },
+
+  // Официальный модуль раскладки Niri
+  "niri/language": {
+    "format": "    {short}",
+    "tooltip": false
+  },
+
+  "custom/arch": {
+    "format": "󰣇",
+    "tooltip": false
+  },
+
+  "niri/workspaces": {
+    "format": "{name}",
+    "disable-scroll": true
+  },
+
+  "network": {
+    "format-wifi": "    {bandwidthDownBits}",
+    "format-ethernet": "    {bandwidthDownBits}",
+    "format-disconnected": "󰤮    No Network",
+    "interval": 5,
+    "tooltip": false
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon}   {volume}%",
+    "format-bluetooth": "{icon}   {volume}%",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ],
+    "format-muted": "    Muted",
+    "on-click": "pavucontrol",
+    "tooltip": false
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-charging": "󰂄  {capacity}%",
+    "format-plugged": "󰂄  {capacity}%",
+    "format-alt": "{icon}  {time}",
+    "format-full": "󱈑  {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+  },  
+
+  "memory": {
+    "interval": 2,
+    "format": "    {percentage}%",
+    "tooltip": true,
+    "format-alt": "    {used:0.1f}G/{total:0.1f}G"
+  }
+}
