@@ -37,25 +37,7 @@ window#waybar {
   margin-right: 12px;
 }
 
-/* ЛОГОТИП ARCH: КРУПНЫЙ И ЧИСТЫЙ */
-#custom-arch,
-#custom-arch label {
-  background-color: transparent;
-  background: none;
-  color: #ac82e9;
-  font-size: 24px;
-  margin: 6px 0px 6px 14px;
-  padding: 0px;
-  border-style: none;
-  box-shadow: none;
-}
 
-/* Подсветка логотипа при наведении */
-#custom-arch:hover,
-#custom-arch:hover label {
-  color: #bda2fa;
-  transition-duration: 120ms;
-}
 
 /* Эффект наведения на звук */
 #pulseaudio:hover {

@@ -8,8 +8,11 @@
   "height": 40,
 
   "modules-left": [
-    "custom/arch",
-    "niri/workspaces"
+  "niri/workspaces" ,
+  "cpu" ,
+  "temperature" ,
+  "memory"
+
   ],
   "modules-center": [
     "custom/clock"
@@ -17,9 +20,6 @@
   "modules-right": [
     "niri/language",
     "network",
-    "cpu",
-    "temperature",
-    "memory",
     "battery",
     "pulseaudio"
   ],
@@ -49,11 +49,6 @@
   // Официальный модуль раскладки Niri
   "niri/language": {
     "format": "    {short}",
-    "tooltip": false
-  },
-
-  "custom/arch": {
-    "format": "󰣇",
     "tooltip": false
   },
 
