@@ -1,0 +1,72 @@
+window {
+    margin: 0px;
+    border: 2px solid #78059E; /* Твой цвет фокус-ринга Niri */
+    border-radius: 4px;
+    background-color: #1a1025;
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+}
+
+#outer-box {
+    margin: 6px;
+    border: none;
+    background-color: transparent;
+}
+
+#input {
+    margin: 0px 0px 6px 0px;
+    border: 1px solid #3d235a;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #241433;
+    color: #ffffff;
+}
+
+#input:focus {
+    border: 1px solid #78059E;
+    outline: none;
+}
+
+#inner-box {
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 0px;
+    border: none;
+}
+
+/* Строка приложения — зажимаем в компактный формат */
+#entry {
+    padding: 4px 6px !important;
+    margin: 0px !important;
+    background-color: transparent;
+}
+
+/* Фиксируем размер иконки */
+#img {
+    margin-right: 8px !important;
+    padding: 0px !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* Чистый текст без скрытых паддингов */
+#text {
+    margin: 0px !important;
+    padding: 0px !important;
+    color: #cda8ff;
+}
+
+/* Аккуратное выделение в стиле Niri */
+#entry:selected {
+    background-color: #241433;
+    border: 1px solid #78059E;
+    border-radius: 4px;
+}
+
+#entry:selected #text {
+    color: #ffffff;
+}

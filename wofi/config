@@ -1,0 +1,9 @@
+mode=drun
+allow_images=true
+insensitive=true
+prompt=n word: search
+width=600
+height=300
+location=center
+filter_rate=100
+fill_rate=0
